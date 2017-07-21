@@ -11,6 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
+    <!--
     <ImageView
         android:id="@+id/navHeaderMainImage"
         android:layout_width="72dp"
@@ -19,7 +20,18 @@
         android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
         android:layout_marginTop="@dimen/nav_header_vertical_spacing"
         android:background="@drawable/ic_mho" />
-    <!-- app:srcCompat="@android:drawable/sym_def_app_icon" -->
+        -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navHeaderMainImage"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:contentDescription="@null"
+        android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+        android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+        android:src="@drawable/ic_mho"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
 
     <TextView
         android:layout_width="match_parent"

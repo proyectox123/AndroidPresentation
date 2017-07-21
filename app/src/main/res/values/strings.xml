@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">AndroidPresentation</string>
+    <string name="app_name">Presentación</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configuración</string>
     <string name="nav_introduction">Introducción</string>
     <string name="nav_life">La vida de un desarrollador</string>
     <string name="nav_future">Futuro del desarrollo</string>
