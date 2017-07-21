@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AndroidPresentation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nav_introduction">Introducción</string>
+    <string name="nav_life">La vida de un desarrollador</string>
+    <string name="nav_future">Futuro del desarrollo</string>
+    <string name="group_subsection_label">Anexos</string>
+    <string name="nav_references">Referencias</string>
+    <string name="nav_thanks">Agradecimiento</string>
+    <string name="nav_header_main_name">Mauricio Hernández</string>
+    <string name="nav_header_main_email_label">Email:&#160;</string>
+    <string name="nav_header_main_email">mauricio.hernandez@ironbit.com.mx</string>
+    <string name="nav_header_main_github_label">GitHub:&#160;</string>
+    <string name="nav_header_main_github">proyectox123</string>
+    <string name="nav_header_main_linkedin_label">LinkedIn:&#160;</string>
+    <string name="nav_header_main_linkedin">mauricio-hernández-oyarzábal</string>
+</resources>
