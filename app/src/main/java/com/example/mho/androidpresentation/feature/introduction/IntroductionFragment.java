@@ -1,30 +1,24 @@
 package com.example.mho.androidpresentation.feature.introduction;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.mho.androidpresentation.BaseFragment;
 import com.example.mho.androidpresentation.R;
-import com.example.mho.androidpresentation.feature.introduction.presenter.IntroductionPresenter;
-import com.example.mho.androidpresentation.feature.introduction.presenter.IntroductionPresenterImpl;
-import com.example.mho.androidpresentation.feature.introduction.view.IntroductionView;
-import com.example.mho.androidpresentation.model.HistoryItem;
+import com.example.mho.androidpresentation.feature.ContainerActivity;
+import com.example.mho.androidpresentation.feature.dashboards.DashboardsFragment;
+import com.example.mho.androidpresentation.feature.history.view.HistoryFragment;
 
-import java.util.ArrayList;
-
-public class IntroductionFragment extends BaseFragment implements IntroductionView{
+public class IntroductionFragment extends BaseFragment implements View.OnClickListener{
 
     public static final String TAG = "IntroductionFragment";
-
-    private RecyclerView historyRecyclerView;
-
-    private IntroductionPresenter introductionPresenter;
+    public static final String EXTRA_FRAGMENT_TAG = "EXTRA_FRAGMENT_TAG";
 
     public IntroductionFragment() {
         // Required empty public constructor
@@ -45,7 +39,6 @@ public class IntroductionFragment extends BaseFragment implements IntroductionVi
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        introductionPresenter = new IntroductionPresenterImpl(this);
     }
 
     @Override
@@ -57,12 +50,11 @@ public class IntroductionFragment extends BaseFragment implements IntroductionVi
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        historyRecyclerView = view.findViewById(R.id.historyRecyclerView);
-        historyRecyclerView.setHasFixedSize(true);
-        LinearLayoutManager llm = new LinearLayoutManager(getContext());
-        historyRecyclerView.setLayoutManager(llm);
+        Button introductionItemHistory = view.findViewById(R.id.introductionItemHistory);
+        Button introductionItemDashboards = view.findViewById(R.id.introductionItemDashboards);
 
-        introductionPresenter.requestHistory();
+        introductionItemHistory.setOnClickListener(this);
+        introductionItemDashboards.setOnClickListener(this);
     }
 
     @Override
@@ -71,8 +63,18 @@ public class IntroductionFragment extends BaseFragment implements IntroductionVi
     }
 
     @Override
-    public void addItems(ArrayList<HistoryItem> historyItemArrayList){
-        HistoryAdapter adapter = new HistoryAdapter(getActivity(), historyItemArrayList);
-        historyRecyclerView.setAdapter(adapter);
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.introductionItemHistory:
+                Intent intent = new Intent(getActivity(), ContainerActivity.class);
+                intent.putExtra(EXTRA_FRAGMENT_TAG, HistoryFragment.TAG);
+                getActivity().startActivity(intent);
+                break;
+            case R.id.introductionItemDashboards:
+                intent = new Intent(getActivity(), ContainerActivity.class);
+                intent.putExtra(EXTRA_FRAGMENT_TAG, DashboardsFragment.TAG);
+                getActivity().startActivity(intent);
+                break;
+        }
     }
 }

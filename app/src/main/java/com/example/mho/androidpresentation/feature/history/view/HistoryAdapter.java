@@ -1,4 +1,4 @@
-package com.example.mho.androidpresentation.feature.introduction;
+package com.example.mho.androidpresentation.feature.history.view;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -48,17 +48,20 @@ public class HistoryAdapter extends BaseRecyclerViewAdapter<HistoryItem> {
 
         private ImageView historyItemImage;
         private TextView historyItemText;
+        private TextView historyItemApiText;
 
         HistoryViewHolder(Context context, View itemView) {
             super(context, itemView);
             historyItemImage = itemView.findViewById(R.id.historyItemImage);
             historyItemText = itemView.findViewById(R.id.historyItemText);
+            historyItemApiText = itemView.findViewById(R.id.historyItemApiText);
         }
 
         @Override
         public void setDataInViews(RecyclerView.ViewHolder holder, int position,
                                    HistoryItem historyItem) {
             historyItemText.setText(historyItem.getLabel());
+            historyItemApiText.setText(historyItem.getApiLevels());
             historyItemImage.setOnClickListener(this);
 
             ImageUtils.loadUrl(context, historyItemImage, historyItem.getUrlImage());

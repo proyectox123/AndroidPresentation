@@ -25,6 +25,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="RaisedButtonDark" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
     <!-- CardView style -->
     <style name="CardViewItemTheme" parent="AppTheme">
         <item name="android:clickable">true</item>
@@ -39,6 +45,14 @@
     </style>
 
     <style name="HistoryItemTextTheme" parent="AppTheme">
+        <item name="android:textColor">@color/colorHistoryItemLabel</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+
+    <style name="HistoryItemApiTextTheme" parent="AppTheme">
         <item name="android:textColor">@color/colorHistoryItemLabel</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">italic</item>

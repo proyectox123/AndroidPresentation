@@ -7,8 +7,8 @@
     <dimen name="fab_margin">16dp</dimen>
 
     <!-- History -->
-    <dimen name="history_item_image_height">100dp</dimen>
-    <dimen name="history_item_image_width">100dp</dimen>
+    <dimen name="history_item_image_height">75dp</dimen>
+    <dimen name="history_item_image_width">75dp</dimen>
 
     <!-- References -->
     <dimen name="references_horizontal_margin">32dp</dimen>

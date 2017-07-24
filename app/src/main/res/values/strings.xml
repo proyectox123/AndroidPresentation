@@ -22,6 +22,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- Introduction -->
+    <string name="introduction_item_history">Historia de Android</string>
+
     <!-- References -->
     <string name="references_item_label_history">Historia de Android:</string>
     <string name="references_item_history">https://en.wikipedia.org/wiki/Android_version_history</string>
@@ -29,4 +32,6 @@
     <string name="references_item_platform_architecture">https://developer.android.com/guide/platform/index.html</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="splash_title">Android</string>
+    <string name="title_activity_container">ContainerActivity</string>
+    <string name="introduction_item_dashboards">Páneles de control</string>
 </resources>

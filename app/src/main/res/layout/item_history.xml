@@ -26,16 +26,30 @@
                 android:layout_alignParentStart="true"
                 style="@style/HistoryItemImageTheme"/>
 
-            <TextView
-                android:id="@+id/historyItemText"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@+id/historyItemImage"
                 android:layout_toRightOf="@+id/historyItemImage"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                style="@style/HistoryItemTextTheme"/>
+                android:orientation="vertical"
+                style="@style/HistoryItemTextTheme">
+
+                <TextView
+                    android:id="@+id/historyItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/HistoryItemTextTheme"/>
+
+                <TextView
+                    android:id="@+id/historyItemApiText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/HistoryItemApiTextTheme"/>
+
+            </LinearLayout>
 
         </RelativeLayout>
 

@@ -1,10 +1,9 @@
-package com.example.mho.androidpresentation.feature.introduction.presenter;
+package com.example.mho.androidpresentation.feature.history.view;
 
 import com.example.mho.androidpresentation.model.HistoryItem;
 
 import java.util.ArrayList;
 
-public interface IntroductionPresenter {
+public interface HistoryView {
     void addItems(ArrayList<HistoryItem> historyItemArrayList);
-    void requestHistory();
 }

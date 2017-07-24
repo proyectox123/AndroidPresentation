@@ -1,16 +1,16 @@
-package com.example.mho.androidpresentation.feature.introduction.interactor;
+package com.example.mho.androidpresentation.feature.history.interactor;
 
-import com.example.mho.androidpresentation.feature.introduction.presenter.IntroductionPresenter;
+import com.example.mho.androidpresentation.feature.history.presenter.HistoryPresenter;
 import com.example.mho.androidpresentation.model.HistoryItem;
 
 import java.util.ArrayList;
 
-public class IntroductionInteractorImpl implements IntroductionInteractor{
+public class HistoryInteractorImpl implements HistoryInteractor{
 
-    private IntroductionPresenter introductionPresenter;
+    private HistoryPresenter historyPresenter;
 
-    public IntroductionInteractorImpl(IntroductionPresenter introductionPresenter){
-        this.introductionPresenter = introductionPresenter;
+    public HistoryInteractorImpl(HistoryPresenter historyPresenter){
+        this.historyPresenter = historyPresenter;
     }
 
     @Override
@@ -32,6 +32,6 @@ public class IntroductionInteractorImpl implements IntroductionInteractor{
         historyItemArrayList.add(new HistoryItem(14, "https://upload.wikimedia.org/wikipedia/commons/c/ca/Android_7.0_Nougat.jpg", "Nougat", "24-25"));
         historyItemArrayList.add(new HistoryItem(15, "https://upload.wikimedia.org/wikipedia/en/a/a6/Android_O_logo.jpg", "Android O", "26"));
 
-        introductionPresenter.addItems(historyItemArrayList);
+        historyPresenter.addItems(historyItemArrayList);
     }
 }
