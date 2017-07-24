@@ -22,21 +22,55 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/references_item_label_platform_architecture"
-                    android:textColor="@color/colorReferencesItemLabel"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:orientation="vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp">
 
-                <TextView
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/references_item_label_history"
+                        android:textColor="@color/colorReferencesItemLabel"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/references_item_history"
+                        android:textColor="@color/colorReferencesItemLabel"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/references_item_platform_architecture"
-                    android:textColor="@color/colorReferencesItemLabel"
-                    android:textSize="16sp"
-                    android:textStyle="italic"/>
+                    android:orientation="vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/references_item_label_platform_architecture"
+                        android:textColor="@color/colorReferencesItemLabel"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/references_item_platform_architecture"
+                        android:textColor="@color/colorReferencesItemLabel"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 

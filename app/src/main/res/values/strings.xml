@@ -22,7 +22,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!-- Platform architecture -->
+    <!-- References -->
+    <string name="references_item_label_history">Historia de Android:</string>
+    <string name="references_item_history">https://en.wikipedia.org/wiki/Android_version_history</string>
     <string name="references_item_label_platform_architecture">Arquitectura de la plataforma:</string>
     <string name="references_item_platform_architecture">https://developer.android.com/guide/platform/index.html</string>
 </resources>

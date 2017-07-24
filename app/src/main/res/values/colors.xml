@@ -9,6 +9,8 @@
     <color name="colorSecondaryDark">#004c8c</color>
     <color name="colorSecondaryLight">#58a5f0</color>
 
+    <color name="colorHistoryItemLabel">#000</color>
+
     <color name="colorReferencesItemLabel">#000</color>
     <color name="colorReferencesItem">#000</color>
 </resources>
