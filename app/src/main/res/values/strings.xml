@@ -34,17 +34,33 @@
     <!-- References -->
     <string name="references_item_label_history">Historia de Android:</string>
     <string name="references_item_history">https://en.wikipedia.org/wiki/Android_version_history</string>
-
     <string name="references_item_label_dashboards">Paneles de control:</string>
     <string name="references_item_dashboards">https://developer.android.com/about/dashboards/index.html</string>
+    <string name="references_item_label_screen_supports">Multiples pantallas:</string>
+    <string name="references_item_screen_supports">https://developer.android.com/guide/practices/screens_support.html</string>
 
     <string name="references_item_label_platform_architecture">Arquitectura de la plataforma:</string>
     <string name="references_item_platform_architecture">https://developer.android.com/guide/platform/index.html</string>
 
     <!-- Dashboard -->
+    <string name="distribution_image_footer">Figura A. Gráfica de distribuciones Android.</string>
     <string name="distribution_version_text">Versión</string>
     <string name="distribution_codename_text">Nombre</string>
     <string name="distribution_api_text">API</string>
     <string name="distribution_distribution_text">Distribución</string>
     <string name="distribution_table_note">Datos recopilados durante un período de 7 días hasta 6/7/2017. No se muestran versiones con una distribución inferior al 0.1%.</string>
+
+    <!-- Multiple screens -->
+    <string name="multiple_screens_label_screen_size">Tamaño de pantalla:</string>
+    <string name="multiple_screens_screen_size">Tamaño físico real para cuya medición se considera la diagonal de la pantalla.</string>
+    <string name="multiple_screens_label_density">Densidad de pantalla:</string>
+    <string name="multiple_screens_density">Cantidad de píxeles dentro de un área física de la pantalla, a la que en general se hace referencia como dpi (puntos por pulgada.</string>
+    <string name="multiple_screens_label_orientation">Orientación:</string>
+    <string name="multiple_screens_orientation">Orientación de la pantalla desde el punto de vista del usuario.</string>
+    <string name="multiple_screens_label_resolution">Resolución:</string>
+    <string name="multiple_screens_resolution">Número total de píxeles físicos en una pantalla.</string>
+    <string name="multiple_screens_label_dp">Píxeles independientes de la densidad (dp):</string>
+    <string name="multiple_screens_dp">Unidad de píxeles virtuales que debes usar al definir el diseño de IU, para expresar las dimensiones o la posición del diseño con independencia de la densidad.</string>
+    <string name="multiple_screens_size_image_footer">Figura A. Gráfica de tamaños de pantalla Android.</string>
+    <string name="multiple_screens_densities_footer">Figura B. Gráfica de densidades Android.</string>
 </resources>

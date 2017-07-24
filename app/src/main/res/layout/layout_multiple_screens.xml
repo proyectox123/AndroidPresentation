@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/multiple_screens_label_screen_size"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/multiple_screens_screen_size"
+        android:textColor="#000"
+        android:textStyle="italic"/>
+
+    <!-- -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/multiple_screens_label_density"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/multiple_screens_density"
+        android:textColor="#000"
+        android:textStyle="italic"/>
+
+    <!-- -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/multiple_screens_label_orientation"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/multiple_screens_orientation"
+        android:textColor="#000"
+        android:textStyle="italic"/>
+
+    <!-- -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/multiple_screens_label_resolution"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/multiple_screens_resolution"
+        android:textColor="#000"
+        android:textStyle="italic"/>
+
+    <!-- -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/multiple_screens_label_dp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/multiple_screens_dp"
+        android:textColor="#000"
+        android:textStyle="italic"/>
+
+</LinearLayout>

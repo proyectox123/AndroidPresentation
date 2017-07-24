@@ -14,6 +14,8 @@ import com.example.mho.androidpresentation.R;
 import com.example.mho.androidpresentation.feature.ContainerActivity;
 import com.example.mho.androidpresentation.feature.dashboards.DashboardsFragment;
 import com.example.mho.androidpresentation.feature.history.view.HistoryFragment;
+import com.example.mho.androidpresentation.feature.multiplescreens.MultipleScreensFragment;
+import com.example.mho.androidpresentation.feature.platformarchitecture.PlatformArchitectureFragment;
 
 public class IntroductionFragment extends BaseFragment implements View.OnClickListener{
 
@@ -81,10 +83,14 @@ public class IntroductionFragment extends BaseFragment implements View.OnClickLi
                 getActivity().startActivity(intent);
                 break;
             case R.id.introductionItemScreenSizes:
-
+                intent = new Intent(getActivity(), ContainerActivity.class);
+                intent.putExtra(EXTRA_FRAGMENT_TAG, MultipleScreensFragment.TAG);
+                getActivity().startActivity(intent);
                 break;
             case R.id.introductionItemPlatformArchitecture:
-
+                intent = new Intent(getActivity(), ContainerActivity.class);
+                intent.putExtra(EXTRA_FRAGMENT_TAG, PlatformArchitectureFragment.TAG);
+                getActivity().startActivity(intent);
                 break;
         }
     }

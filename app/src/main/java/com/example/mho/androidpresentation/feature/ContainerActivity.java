@@ -10,6 +10,8 @@ import com.example.mho.androidpresentation.R;
 import com.example.mho.androidpresentation.feature.dashboards.DashboardsFragment;
 import com.example.mho.androidpresentation.feature.history.view.HistoryFragment;
 import com.example.mho.androidpresentation.feature.introduction.IntroductionFragment;
+import com.example.mho.androidpresentation.feature.multiplescreens.MultipleScreensFragment;
+import com.example.mho.androidpresentation.feature.platformarchitecture.PlatformArchitectureFragment;
 import com.example.mho.androidpresentation.util.ActivityUtils;
 
 public class ContainerActivity extends BaseActivity {
@@ -57,6 +59,22 @@ public class ContainerActivity extends BaseActivity {
                     ActivityUtils.replaceFragment(getSupportFragmentManager(),
                             DashboardsFragment.newInstance(),
                             R.id.frameContent, DashboardsFragment.TAG);
+                    return;
+                }
+
+                if (tag.equals(MultipleScreensFragment.TAG)){
+                    initToolbar(getString(R.string.introduction_item_screen_sizes));
+                    ActivityUtils.replaceFragment(getSupportFragmentManager(),
+                            MultipleScreensFragment.newInstance(),
+                            R.id.frameContent, MultipleScreensFragment.TAG);
+                    return;
+                }
+
+                if (tag.equals(PlatformArchitectureFragment.TAG)){
+                    initToolbar(getString(R.string.introduction_item_platform_architecture));
+                    ActivityUtils.replaceFragment(getSupportFragmentManager(),
+                            PlatformArchitectureFragment.newInstance(),
+                            R.id.frameContent, PlatformArchitectureFragment.TAG);
                     return;
                 }
             }
