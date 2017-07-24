@@ -1,6 +1,7 @@
 package com.example.mho.androidpresentation;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -13,8 +14,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.mho.androidpresentation.feature.developerlife.DeveloperLifeFragment;
+import com.example.mho.androidpresentation.feature.developmentfuture.DevelopmentFutureFragment;
+import com.example.mho.androidpresentation.feature.introduction.IntroductionFragment;
+import com.example.mho.androidpresentation.feature.references.ReferencesFragment;
+import com.example.mho.androidpresentation.feature.thanks.ThanksFragment;
+import com.example.mho.androidpresentation.util.ActivityUtils;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private NavigationView mNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +48,9 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+        mNavigationView.setNavigationItemSelectedListener(this);
+        selectScreenView(R.id.nav_introduction);
     }
 
     @Override
@@ -76,24 +87,67 @@ public class MainActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        selectScreenView(item.getItemId());
 
-        if (id == R.id.nav_introduction) {
-            // Handle the camera action
-        } else if (id == R.id.nav_life) {
-
-        } else if (id == R.id.nav_future) {
-
-        } else if (id == R.id.nav_references) {
-
-        } else if (id == R.id.nav_thanks) {
-
-        }
+        item.setChecked(true);
+        setTitle(item.getTitle());
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
         return true;
+    }
+
+    private void selectScreenView(int id){
+        uncheckedMenuItems();
+        if (id == R.id.nav_introduction) {
+            ActivityUtils.replaceFragment(getSupportFragmentManager(),
+                    IntroductionFragment.newInstance(),
+                    R.id.frameContent, IntroductionFragment.TAG);
+            return;
+        }
+
+        if (id == R.id.nav_life) {
+            ActivityUtils.replaceFragment(getSupportFragmentManager(),
+                    DeveloperLifeFragment.newInstance(),
+                    R.id.frameContent, DeveloperLifeFragment.TAG);
+            return;
+        }
+
+        if (id == R.id.nav_future) {
+            ActivityUtils.replaceFragment(getSupportFragmentManager(),
+                    DevelopmentFutureFragment.newInstance(),
+                    R.id.frameContent, DevelopmentFutureFragment.TAG);
+            return;
+        }
+
+        if (id == R.id.nav_references) {
+            ActivityUtils.replaceFragment(getSupportFragmentManager(),
+                    ReferencesFragment.newInstance(),
+                    R.id.frameContent, ReferencesFragment.TAG);
+            return;
+        }
+
+        if (id == R.id.nav_thanks) {
+            ActivityUtils.replaceFragment(getSupportFragmentManager(),
+                    ThanksFragment.newInstance(),
+                    R.id.frameContent, ThanksFragment.TAG);
+        }
+    }
+
+    private void uncheckedMenuItems(){
+        if(mNavigationView == null || mNavigationView.getMenu() == null){
+            return;
+        }
+
+        Menu menu = mNavigationView.getMenu();
+        if(menu == null || menu.size() == 0){
+            return;
+        }
+
+        for (int i = 0; i < menu.size(); i++) {
+            menu.getItem(i).setChecked(false);
+        }
     }
 }
