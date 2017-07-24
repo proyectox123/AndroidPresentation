@@ -27,4 +27,6 @@
     <string name="references_item_history">https://en.wikipedia.org/wiki/Android_version_history</string>
     <string name="references_item_label_platform_architecture">Arquitectura de la plataforma:</string>
     <string name="references_item_platform_architecture">https://developer.android.com/guide/platform/index.html</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="splash_title">Android</string>
 </resources>

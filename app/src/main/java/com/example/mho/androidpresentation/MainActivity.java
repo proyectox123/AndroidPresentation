@@ -50,7 +50,12 @@ public class MainActivity extends AppCompatActivity
 
         mNavigationView = (NavigationView) findViewById(R.id.nav_view);
         mNavigationView.setNavigationItemSelectedListener(this);
-        selectScreenView(R.id.nav_introduction);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        selectScreenView(R.id.nav_introduction, getString(R.string.nav_introduction));
     }
 
     @Override
@@ -88,10 +93,10 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        selectScreenView(item.getItemId());
-
-        item.setChecked(true);
-        setTitle(item.getTitle());
+        if(!item.isChecked()) {
+            selectScreenView(item.getItemId(), ""+item.getTitle());
+            item.setChecked(true);
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -99,8 +104,9 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    private void selectScreenView(int id){
+    private void selectScreenView(int id, String title){
         uncheckedMenuItems();
+        setTitle(title);
         if (id == R.id.nav_introduction) {
             ActivityUtils.replaceFragment(getSupportFragmentManager(),
                     IntroductionFragment.newInstance(),
