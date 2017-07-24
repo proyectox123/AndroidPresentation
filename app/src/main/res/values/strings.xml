@@ -63,4 +63,19 @@
     <string name="multiple_screens_dp">Unidad de píxeles virtuales que debes usar al definir el diseño de IU, para expresar las dimensiones o la posición del diseño con independencia de la densidad.</string>
     <string name="multiple_screens_size_image_footer">Figura A. Gráfica de tamaños de pantalla Android.</string>
     <string name="multiple_screens_densities_footer">Figura B. Gráfica de densidades Android.</string>
+
+    <!-- Platform architecture -->
+    <string name="platform_architecture_image_footer">Figura A. Pila de software de Android.</string>
+    <string name="platform_architecture_label_linux_kernel">Kernel de Linux:</string>
+    <string name="platform_architecture_linux_kernel">Android utiliza el núcleo de Linux 2.6 como una capa de abstracción para el hardware disponible en los dispositivos móviles.</string>
+    <string name="platform_architecture_label_hal">Capa de abstracción de hardware (HAL):</string>
+    <string name="platform_architecture_hal">Esta capa contiene los drivers necesarios para que cualquier componente hardware pueda ser utilizado mediante las llamadas correspondientes.</string>
+    <string name="platform_architecture_label_libraries">Bibliotecas C/C++ nativas:</string>
+    <string name="platform_architecture_libraries">OpenGL/SL y SGL, Librería Media Libraries, Librería SSL, Librería SQLite, entre otras.</string>
+    <string name="platform_architecture_label_android_runtime">Tiempo de ejecución de Android:</string>
+    <string name="platform_architecture_android_runtime">Ejecuta varias máquinas virtuales en dispositivos de memoria baja ejecutando archivos DEX, un formato de código de bytes diseñado especialmente para Android y optimizado para ocupar un espacio de memoria mínimo.</string>
+    <string name="platform_architecture_label_frameworks">Framework de Aplicaciones:</string>
+    <string name="platform_architecture_frameworks">Representa fundamentalmente el conjunto de herramientas de desarrollo de cualquier aplicación (Sistema de vista, administrador de recursos, administrador de actividad, entre otros).</string>
+    <string name="platform_architecture_label_system_apps">Apps del sistema:</string>
+    <string name="platform_architecture_system_apps">Aplicaciones del dispositivo.</string>
 </resources>

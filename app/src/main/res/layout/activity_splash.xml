@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mho.androidpresentation.SplashActivity">
+    tools:context="com.example.mho.androidpresentation.SplashActivity"
+    android:background="@color/colorGrayTransparent">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/splash_title"
-            android:textColor="@color/colorPrimaryDarkDark"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="48sp"
             android:textStyle="bold"/>
 

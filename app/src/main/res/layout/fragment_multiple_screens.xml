@@ -31,6 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
+                android:gravity="center"
                 android:text="@string/multiple_screens_size_image_footer"
                 android:textColor="#000"
                 android:textStyle="italic"/>
@@ -48,11 +49,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
+                android:gravity="center"
                 android:text="@string/multiple_screens_densities_footer"
                 android:textColor="#000"
                 android:textStyle="italic"/>
-
-
 
         </LinearLayout>
 

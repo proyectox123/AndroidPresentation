@@ -6,9 +6,11 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.mho.androidpresentation.BaseFragment;
 import com.example.mho.androidpresentation.R;
+import com.example.mho.androidpresentation.util.ImageUtils;
 
 public class PlatformArchitectureFragment extends BaseFragment implements View.OnClickListener{
 
@@ -44,6 +46,9 @@ public class PlatformArchitectureFragment extends BaseFragment implements View.O
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ImageView platformArchitectureImage = view.findViewById(R.id.platformArchitectureImage);
+        String urlImage = "https://developer.android.com/guide/platform/images/android-stack_2x.png?hl=es-419";
+        ImageUtils.loadUrl(getContext(), platformArchitectureImage, urlImage);
     }
 
     @Override
