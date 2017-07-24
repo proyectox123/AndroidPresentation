@@ -5,6 +5,10 @@ import android.support.v7.widget.Toolbar;
 
 public class BaseActivity extends AppCompatActivity {
 
+    public void initToolbar(){
+        initToolbar("");
+    }
+
     public void initToolbar(String title){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

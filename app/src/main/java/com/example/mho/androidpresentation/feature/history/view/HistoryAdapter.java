@@ -1,6 +1,7 @@
 package com.example.mho.androidpresentation.feature.history.view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,11 +17,13 @@ import com.example.mho.androidpresentation.util.ImageUtils;
 
 import java.util.ArrayList;
 
-public class HistoryAdapter extends BaseRecyclerViewAdapter<AndroidVersion> {
+import static com.example.mho.androidpresentation.feature.history.view.HistoryDetailActivity.EXTRA_ANDROID_VERSION;
+
+class HistoryAdapter extends BaseRecyclerViewAdapter<AndroidVersion> {
 
     private LayoutInflater layoutInflater;
 
-    public HistoryAdapter(Context context, ArrayList<AndroidVersion> items) {
+    HistoryAdapter(Context context, ArrayList<AndroidVersion> items) {
         super(context, items);
         this.layoutInflater = LayoutInflater.from(context);
     }
@@ -43,6 +46,7 @@ public class HistoryAdapter extends BaseRecyclerViewAdapter<AndroidVersion> {
 
         private ImageView historyItemImage;
         private TextView historyItemText;
+        private AndroidVersion androidVersion;
 
         HistoryViewHolder(Context context, View itemView) {
             super(context, itemView);
@@ -53,6 +57,7 @@ public class HistoryAdapter extends BaseRecyclerViewAdapter<AndroidVersion> {
         @Override
         public void setDataInViews(RecyclerView.ViewHolder holder, int position,
                                    AndroidVersion androidVersion) {
+            this.androidVersion = androidVersion;
             historyItemText.setText(androidVersion.getLabel());
             historyItemImage.setOnClickListener(this);
 
@@ -63,6 +68,9 @@ public class HistoryAdapter extends BaseRecyclerViewAdapter<AndroidVersion> {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.historyItemImage:
+                    Intent intent = new Intent(context, HistoryDetailActivity.class);
+                    intent.putExtra(EXTRA_ANDROID_VERSION, androidVersion);
+                    context.startActivity(intent);
                     break;
             }
         }

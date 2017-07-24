@@ -1,6 +1,9 @@
 package com.example.mho.androidpresentation.model;
 
-public class AndroidVersion {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class AndroidVersion implements Parcelable{
 
     private int id;
     private String urlImage;
@@ -16,6 +19,26 @@ public class AndroidVersion {
         this.apiLevels = apiLevels;
         this.distribution = distribution;
     }
+
+    private AndroidVersion(Parcel in) {
+        id = in.readInt();
+        urlImage = in.readString();
+        label = in.readString();
+        apiLevels = in.readString();
+        distribution = in.readString();
+    }
+
+    public static final Creator<AndroidVersion> CREATOR = new Creator<AndroidVersion>() {
+        @Override
+        public AndroidVersion createFromParcel(Parcel in) {
+            return new AndroidVersion(in);
+        }
+
+        @Override
+        public AndroidVersion[] newArray(int size) {
+            return new AndroidVersion[size];
+        }
+    };
 
     public int getId() {
         return id;
@@ -35,5 +58,19 @@ public class AndroidVersion {
 
     public String getDistribution() {
         return distribution;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(id);
+        parcel.writeString(urlImage);
+        parcel.writeString(label);
+        parcel.writeString(apiLevels);
+        parcel.writeString(distribution);
     }
 }

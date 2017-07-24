@@ -34,6 +34,11 @@
             android:label="@string/title_activity_container"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".feature.history.view.HistoryDetailActivity"
+            android:label="@string/title_activity_history_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
