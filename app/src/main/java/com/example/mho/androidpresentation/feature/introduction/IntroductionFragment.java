@@ -52,9 +52,14 @@ public class IntroductionFragment extends BaseFragment implements View.OnClickLi
         super.onViewCreated(view, savedInstanceState);
         Button introductionItemHistory = view.findViewById(R.id.introductionItemHistory);
         Button introductionItemDashboards = view.findViewById(R.id.introductionItemDashboards);
+        Button introductionItemScreenSizes = view.findViewById(R.id.introductionItemScreenSizes);
+        Button introductionItemPlatformArchitecture =
+                view.findViewById(R.id.introductionItemPlatformArchitecture);
 
         introductionItemHistory.setOnClickListener(this);
         introductionItemDashboards.setOnClickListener(this);
+        introductionItemScreenSizes.setOnClickListener(this);
+        introductionItemPlatformArchitecture.setOnClickListener(this);
     }
 
     @Override
@@ -74,6 +79,12 @@ public class IntroductionFragment extends BaseFragment implements View.OnClickLi
                 intent = new Intent(getActivity(), ContainerActivity.class);
                 intent.putExtra(EXTRA_FRAGMENT_TAG, DashboardsFragment.TAG);
                 getActivity().startActivity(intent);
+                break;
+            case R.id.introductionItemScreenSizes:
+
+                break;
+            case R.id.introductionItemPlatformArchitecture:
+
                 break;
         }
     }

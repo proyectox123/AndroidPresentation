@@ -43,20 +43,17 @@ public class HistoryAdapter extends BaseRecyclerViewAdapter<AndroidVersion> {
 
         private ImageView historyItemImage;
         private TextView historyItemText;
-        private TextView historyItemApiText;
 
         HistoryViewHolder(Context context, View itemView) {
             super(context, itemView);
             historyItemImage = itemView.findViewById(R.id.historyItemImage);
             historyItemText = itemView.findViewById(R.id.historyItemText);
-            historyItemApiText = itemView.findViewById(R.id.historyItemApiText);
         }
 
         @Override
         public void setDataInViews(RecyclerView.ViewHolder holder, int position,
                                    AndroidVersion androidVersion) {
             historyItemText.setText(androidVersion.getLabel());
-            historyItemApiText.setText(androidVersion.getApiLevels());
             historyItemImage.setOnClickListener(this);
 
             ImageUtils.loadUrl(context, historyItemImage, androidVersion.getUrlImage());

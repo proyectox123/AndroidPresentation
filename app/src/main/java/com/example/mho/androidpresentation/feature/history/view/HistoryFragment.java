@@ -3,7 +3,7 @@ package com.example.mho.androidpresentation.feature.history.view;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import com.example.mho.androidpresentation.BaseFragment;
 import com.example.mho.androidpresentation.R;
+import com.example.mho.androidpresentation.custom.GridSpacingItemDecoration;
 import com.example.mho.androidpresentation.feature.history.presenter.HistoryPresenter;
 import com.example.mho.androidpresentation.feature.history.presenter.HistoryPresenterImpl;
 import com.example.mho.androidpresentation.model.AndroidVersion;
@@ -20,6 +21,8 @@ import java.util.ArrayList;
 public class HistoryFragment extends BaseFragment implements HistoryView {
 
     public static final String TAG = "HistoryFragment";
+    private final static int NUMBER_OF_COLUMNS = 2;
+    private final static int SPACING_ITEM = 3;
 
     private RecyclerView historyRecyclerView;
 
@@ -58,8 +61,12 @@ public class HistoryFragment extends BaseFragment implements HistoryView {
         super.onViewCreated(view, savedInstanceState);
         historyRecyclerView = view.findViewById(R.id.historyRecyclerView);
         historyRecyclerView.setHasFixedSize(true);
-        LinearLayoutManager llm = new LinearLayoutManager(getContext());
-        historyRecyclerView.setLayoutManager(llm);
+        //LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        GridSpacingItemDecoration gridSpacingItemDecoration =
+                new GridSpacingItemDecoration(NUMBER_OF_COLUMNS, SPACING_ITEM, false);
+        historyRecyclerView.addItemDecoration(gridSpacingItemDecoration);
+        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), NUMBER_OF_COLUMNS);
+        historyRecyclerView.setLayoutManager(layoutManager);
 
         historyPresenter.requestHistory();
     }

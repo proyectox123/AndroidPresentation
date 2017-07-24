@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="@string/distribution_version_codename"/>
+            android:text="@string/distribution_codename_text"/>
 
     </RelativeLayout>
 
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="@string/distribution_version_api"/>
+            android:text="@string/distribution_api_text"/>
 
     </RelativeLayout>
 
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="@string/distribution_version_distribution"/>
+            android:text="@string/distribution_distribution_text"/>
 
     </RelativeLayout>
 

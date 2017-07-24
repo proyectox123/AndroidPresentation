@@ -49,10 +49,11 @@
 
     <style name="HistoryItemTextTheme" parent="AppTheme">
         <item name="android:textColor">@color/colorHistoryItemLabel</item>
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:layout_marginLeft">6dp</item>
         <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginTop">4dp</item>
     </style>
 
     <style name="HistoryItemApiTextTheme" parent="AppTheme">

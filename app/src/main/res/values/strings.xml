@@ -28,10 +28,16 @@
     <!-- Introduction -->
     <string name="introduction_item_history">Historia de Android</string>
     <string name="introduction_item_dashboards">Distribuciones</string>
+    <string name="introduction_item_screen_sizes">Densidades y tamaños de pantalla</string>
+    <string name="introduction_item_platform_architecture">Arquitectura de la plataforma</string>
 
     <!-- References -->
     <string name="references_item_label_history">Historia de Android:</string>
     <string name="references_item_history">https://en.wikipedia.org/wiki/Android_version_history</string>
+
+    <string name="references_item_label_dashboards">Paneles de control:</string>
+    <string name="references_item_dashboards">https://developer.android.com/about/dashboards/index.html</string>
+
     <string name="references_item_label_platform_architecture">Arquitectura de la plataforma:</string>
     <string name="references_item_platform_architecture">https://developer.android.com/guide/platform/index.html</string>
 
