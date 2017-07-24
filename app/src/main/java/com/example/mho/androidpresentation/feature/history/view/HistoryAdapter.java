@@ -11,21 +11,16 @@ import android.widget.TextView;
 import com.example.mho.androidpresentation.BaseRecyclerViewAdapter;
 import com.example.mho.androidpresentation.BaseViewHolder;
 import com.example.mho.androidpresentation.R;
-import com.example.mho.androidpresentation.model.HistoryItem;
+import com.example.mho.androidpresentation.model.AndroidVersion;
 import com.example.mho.androidpresentation.util.ImageUtils;
 
 import java.util.ArrayList;
 
-/**
- * Created by ironbit on 24-Jul-17.
- * Modified by ironbit on 24-Jul-17.
- */
-
-public class HistoryAdapter extends BaseRecyclerViewAdapter<HistoryItem> {
+public class HistoryAdapter extends BaseRecyclerViewAdapter<AndroidVersion> {
 
     private LayoutInflater layoutInflater;
 
-    public HistoryAdapter(Context context, ArrayList<HistoryItem> items) {
+    public HistoryAdapter(Context context, ArrayList<AndroidVersion> items) {
         super(context, items);
         this.layoutInflater = LayoutInflater.from(context);
     }
@@ -37,13 +32,13 @@ public class HistoryAdapter extends BaseRecyclerViewAdapter<HistoryItem> {
     }
 
     @Override
-    public void onBindData(RecyclerView.ViewHolder holder, int position, HistoryItem historyItem)
+    public void onBindData(RecyclerView.ViewHolder holder, int position, AndroidVersion androidVersion)
             throws Exception {
         HistoryViewHolder historyViewHolder = (HistoryViewHolder) holder;
-        historyViewHolder.setDataInViews(holder, position, historyItem);
+        historyViewHolder.setDataInViews(holder, position, androidVersion);
     }
 
-    private static class HistoryViewHolder extends BaseViewHolder<HistoryItem>
+    private static class HistoryViewHolder extends BaseViewHolder<AndroidVersion>
             implements View.OnClickListener {
 
         private ImageView historyItemImage;
@@ -59,12 +54,12 @@ public class HistoryAdapter extends BaseRecyclerViewAdapter<HistoryItem> {
 
         @Override
         public void setDataInViews(RecyclerView.ViewHolder holder, int position,
-                                   HistoryItem historyItem) {
-            historyItemText.setText(historyItem.getLabel());
-            historyItemApiText.setText(historyItem.getApiLevels());
+                                   AndroidVersion androidVersion) {
+            historyItemText.setText(androidVersion.getLabel());
+            historyItemApiText.setText(androidVersion.getApiLevels());
             historyItemImage.setOnClickListener(this);
 
-            ImageUtils.loadUrl(context, historyItemImage, historyItem.getUrlImage());
+            ImageUtils.loadUrl(context, historyItemImage, androidVersion.getUrlImage());
         }
 
         @Override

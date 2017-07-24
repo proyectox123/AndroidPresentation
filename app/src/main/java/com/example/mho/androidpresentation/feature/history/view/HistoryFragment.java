@@ -13,7 +13,7 @@ import com.example.mho.androidpresentation.BaseFragment;
 import com.example.mho.androidpresentation.R;
 import com.example.mho.androidpresentation.feature.history.presenter.HistoryPresenter;
 import com.example.mho.androidpresentation.feature.history.presenter.HistoryPresenterImpl;
-import com.example.mho.androidpresentation.model.HistoryItem;
+import com.example.mho.androidpresentation.model.AndroidVersion;
 
 import java.util.ArrayList;
 
@@ -70,8 +70,8 @@ public class HistoryFragment extends BaseFragment implements HistoryView {
     }
 
     @Override
-    public void addItems(ArrayList<HistoryItem> historyItemArrayList){
-        HistoryAdapter adapter = new HistoryAdapter(getActivity(), historyItemArrayList);
+    public void addItems(ArrayList<AndroidVersion> androidVersionArrayList){
+        HistoryAdapter adapter = new HistoryAdapter(getActivity(), androidVersionArrayList);
         historyRecyclerView.setAdapter(adapter);
     }
 }

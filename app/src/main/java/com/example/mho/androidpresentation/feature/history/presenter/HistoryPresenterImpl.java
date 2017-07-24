@@ -3,7 +3,7 @@ package com.example.mho.androidpresentation.feature.history.presenter;
 import com.example.mho.androidpresentation.feature.history.interactor.HistoryInteractor;
 import com.example.mho.androidpresentation.feature.history.interactor.HistoryInteractorImpl;
 import com.example.mho.androidpresentation.feature.history.view.HistoryView;
-import com.example.mho.androidpresentation.model.HistoryItem;
+import com.example.mho.androidpresentation.model.AndroidVersion;
 
 import java.util.ArrayList;
 
@@ -19,8 +19,8 @@ public class HistoryPresenterImpl implements HistoryPresenter {
 
 
     @Override
-    public void addItems(ArrayList<HistoryItem> historyItemArrayList) {
-        historyView.addItems(historyItemArrayList);
+    public void addItems(ArrayList<AndroidVersion> androidVersionArrayList) {
+        historyView.addItems(androidVersionArrayList);
     }
 
     @Override

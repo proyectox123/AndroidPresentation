@@ -1,17 +1,20 @@
 package com.example.mho.androidpresentation.model;
 
-public class HistoryItem {
+public class AndroidVersion {
 
     private int id;
     private String urlImage;
     private String label;
     private String apiLevels;
+    private String distribution;
 
-    public HistoryItem(int id, String urlImage, String label, String apiLevels) {
+    public AndroidVersion(int id, String urlImage, String label, String apiLevels,
+                          String distribution) {
         this.id = id;
         this.urlImage = urlImage;
         this.label = label;
         this.apiLevels = apiLevels;
+        this.distribution = distribution;
     }
 
     public int getId() {
@@ -28,5 +31,9 @@ public class HistoryItem {
 
     public String getApiLevels() {
         return apiLevels;
+    }
+
+    public String getDistribution() {
+        return distribution;
     }
 }

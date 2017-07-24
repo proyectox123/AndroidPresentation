@@ -3,6 +3,9 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="splash_title">Android</string>
+    <string name="title_activity_container">ContainerActivity</string>
 
     <string name="action_settings">Configuración</string>
     <string name="nav_introduction">Introducción</string>
@@ -24,14 +27,18 @@
 
     <!-- Introduction -->
     <string name="introduction_item_history">Historia de Android</string>
+    <string name="introduction_item_dashboards">Distribuciones</string>
 
     <!-- References -->
     <string name="references_item_label_history">Historia de Android:</string>
     <string name="references_item_history">https://en.wikipedia.org/wiki/Android_version_history</string>
     <string name="references_item_label_platform_architecture">Arquitectura de la plataforma:</string>
     <string name="references_item_platform_architecture">https://developer.android.com/guide/platform/index.html</string>
-    <string name="title_activity_splash">SplashActivity</string>
-    <string name="splash_title">Android</string>
-    <string name="title_activity_container">ContainerActivity</string>
-    <string name="introduction_item_dashboards">Páneles de control</string>
+
+    <!-- Dashboard -->
+    <string name="distribution_version_text">Versión</string>
+    <string name="distribution_codename_text">Nombre</string>
+    <string name="distribution_api_text">API</string>
+    <string name="distribution_distribution_text">Distribución</string>
+    <string name="distribution_table_note">Datos recopilados durante un período de 7 días hasta 6/7/2017. No se muestran versiones con una distribución inferior al 0.1%.</string>
 </resources>
