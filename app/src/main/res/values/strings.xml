@@ -34,13 +34,17 @@
     <!-- References -->
     <string name="references_item_label_history">Historia de Android:</string>
     <string name="references_item_history">https://en.wikipedia.org/wiki/Android_version_history</string>
+    <string name="references_item_label_distribution_features">Historia de cada versión por nivel de API</string>
+    <string name="references_item_distribution_features">https://en.wikipedia.org/wiki/Android_version_history</string>
     <string name="references_item_label_dashboards">Paneles de control:</string>
     <string name="references_item_dashboards">https://developer.android.com/about/dashboards/index.html</string>
     <string name="references_item_label_screen_supports">Multiples pantallas:</string>
     <string name="references_item_screen_supports">https://developer.android.com/guide/practices/screens_support.html</string>
-
     <string name="references_item_label_platform_architecture">Arquitectura de la plataforma:</string>
     <string name="references_item_platform_architecture">https://developer.android.com/guide/platform/index.html</string>
+
+    <!-- History -->
+    <string name="history_detail_features_label">Implementaciones:</string>
 
     <!-- Dashboard -->
     <string name="distribution_image_footer">Figura A. Gráfica de distribuciones Android.</string>

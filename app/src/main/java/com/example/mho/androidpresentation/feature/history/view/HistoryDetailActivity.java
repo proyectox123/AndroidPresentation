@@ -5,6 +5,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.mho.androidpresentation.BaseActivity;
 import com.example.mho.androidpresentation.R;
@@ -38,8 +39,14 @@ public class HistoryDetailActivity extends BaseActivity {
         }
 
         ImageView historyDetailImage = (ImageView) findViewById(R.id.historyDetailImage);
+        TextView historyDetailTitle = (TextView) findViewById(R.id.historyDetailTitle);
+        TextView historyDetailFeatures = (TextView) findViewById(R.id.historyDetailFeatures);
+
         String urlImage = androidVersion.getUrlImage();
         ImageUtils.loadUrl(HistoryDetailActivity.this, historyDetailImage, urlImage);
+        String title = androidVersion.getLabel() + " " + androidVersion.getReleaseDate();
+        historyDetailTitle.setText(title);
+        historyDetailFeatures.setText(androidVersion.getFeatures());
     }
 
     @Override
