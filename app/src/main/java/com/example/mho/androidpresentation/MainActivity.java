@@ -93,10 +93,7 @@ public class MainActivity extends BaseActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        if(!item.isChecked()) {
-            selectScreenView(item.getItemId(), ""+item.getTitle());
-            item.setChecked(true);
-        }
+        selectScreenView(item.getItemId(), ""+item.getTitle());
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -105,7 +102,7 @@ public class MainActivity extends BaseActivity
     }
 
     private void selectScreenView(int id, String title){
-        uncheckedMenuItems();
+        //uncheckedMenuItems();
         setTitle(title);
         if (id == R.id.nav_introduction) {
             ActivityUtils.replaceFragment(getSupportFragmentManager(),
