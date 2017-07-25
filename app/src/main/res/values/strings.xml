@@ -193,4 +193,7 @@
     <string name="platform_architecture_label_system_apps">Apps del sistema:</string>
     <string name="platform_architecture_system_apps">Aplicaciones del dispositivo.</string>
     <string name="title_activity_history_detail">HistoryDetailActivity</string>
+
+    <!-- Developer life -->
+    <string name="developer_life_section_title">Juntos, pero no iguales.</string>
 </resources>
