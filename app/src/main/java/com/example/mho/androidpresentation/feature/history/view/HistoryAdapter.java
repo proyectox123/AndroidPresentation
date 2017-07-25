@@ -1,7 +1,10 @@
 package com.example.mho.androidpresentation.feature.history.view;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.util.Pair;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -68,11 +71,24 @@ class HistoryAdapter extends BaseRecyclerViewAdapter<AndroidVersion> {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.historyItemImage:
-                    Intent intent = new Intent(context, HistoryDetailActivity.class);
-                    intent.putExtra(EXTRA_ANDROID_VERSION, androidVersion);
-                    context.startActivity(intent);
+                    initHistoryDetailActivity();
                     break;
             }
+        }
+
+        @SuppressWarnings("unchecked")
+        private void initHistoryDetailActivity(){
+            Intent intent = new Intent(context, HistoryDetailActivity.class);
+            intent.putExtra(EXTRA_ANDROID_VERSION, androidVersion);
+
+            Pair<View, String> pair1 =  Pair.create((View) historyItemImage,
+                            context.getString(R.string.transition_name_icon));
+            Pair<View, String> pair2 =  Pair.create((View) historyItemText,
+                    context.getString(R.string.transition_name_title));
+            ActivityOptionsCompat options = ActivityOptionsCompat.
+                    makeSceneTransitionAnimation((Activity) context, pair1, pair2);
+
+            context.startActivity(intent, options.toBundle());
         }
     }
 }

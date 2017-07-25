@@ -34,7 +34,9 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:contentDescription="@null"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="8dp"
+                    android:transitionName="@string/transition_name_icon"
+                    tools:targetApi="lollipop"/>
 
                 <TextView
                     android:id="@+id/historyDetailTitle"
@@ -42,10 +44,23 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textColor="#000"
-                    android:textSize="24sp"
+                    android:textSize="26sp"
                     android:textStyle="bold"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="8dp"
+                    android:transitionName="@string/transition_name_title"
+                    tools:targetApi="lollipop"/>
+
+                <TextView
+                    android:id="@+id/historyDetailDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:textStyle="italic"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginTop="8dp"/>
+                    android:layout_marginTop="4dp"/>
 
                 <TextView
                     android:id="@+id/historyDetailFeaturesLabel"
@@ -56,8 +71,8 @@
                     android:textColor="#000"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginTop="16dp"/>
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"/>
 
                 <TextView
                     android:id="@+id/historyDetailFeatures"

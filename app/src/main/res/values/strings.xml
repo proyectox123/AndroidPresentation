@@ -7,6 +7,10 @@
     <string name="splash_title">Android</string>
     <string name="title_activity_container">ContainerActivity</string>
 
+    <!-- Transitions -->
+    <string name="transition_name_icon">transition_name_icon</string>
+    <string name="transition_name_title">transition_name_title</string>
+
     <string name="action_settings">Configuración</string>
     <string name="nav_introduction">Introducción</string>
     <string name="nav_life">La vida de un desarrollador</string>

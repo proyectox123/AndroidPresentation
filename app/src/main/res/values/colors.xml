@@ -10,6 +10,7 @@
     <color name="colorSecondaryDark">#004c8c</color>
     <color name="colorSecondaryLight">#58a5f0</color>
     <color name="colorGrayTransparent">#aacfcfcf</color>
+    <color name="colorBlueLightTransparent">#aac8d1ff</color>
 
     <color name="colorHistoryItemLabel">#000</color>
 

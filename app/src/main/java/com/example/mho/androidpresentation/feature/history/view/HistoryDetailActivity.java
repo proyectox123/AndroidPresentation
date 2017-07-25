@@ -40,12 +40,13 @@ public class HistoryDetailActivity extends BaseActivity {
 
         ImageView historyDetailImage = (ImageView) findViewById(R.id.historyDetailImage);
         TextView historyDetailTitle = (TextView) findViewById(R.id.historyDetailTitle);
+        TextView historyDetailDate = (TextView) findViewById(R.id.historyDetailDate);
         TextView historyDetailFeatures = (TextView) findViewById(R.id.historyDetailFeatures);
 
         String urlImage = androidVersion.getUrlImage();
         ImageUtils.loadUrl(HistoryDetailActivity.this, historyDetailImage, urlImage);
-        String title = androidVersion.getLabel() + " " + androidVersion.getReleaseDate();
-        historyDetailTitle.setText(title);
+        historyDetailTitle.setText(androidVersion.getLabel());
+        historyDetailDate.setText(androidVersion.getReleaseDate());
         historyDetailFeatures.setText(androidVersion.getFeatures());
     }
 
