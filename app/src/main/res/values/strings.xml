@@ -197,5 +197,6 @@
 
     <!-- Developer life -->
     <string name="developer_life_section_title">Juntos, pero no iguales.</string>
+    <string name="thanks_label">¡Gracias por su atención!</string>
 
 </resources>

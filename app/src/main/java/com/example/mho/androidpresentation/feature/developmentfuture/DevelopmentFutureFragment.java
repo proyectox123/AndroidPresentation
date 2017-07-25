@@ -90,6 +90,10 @@ public class DevelopmentFutureFragment extends BaseFragment {
         developmentFuture.setImageUrl("https://elandroidelibre.elespanol.com/wp-content/uploads/2016/12/android-things-750x429.jpg");
         developmentFutureArrayList.add(developmentFuture);
 
+        developmentFuture = new DevelopmentFuture(7, "Kotlin");
+        developmentFuture.setImageUrl("https://antonioleiva.com/wp-content/uploads/2015/03/kotlin.png");
+        developmentFutureArrayList.add(developmentFuture);
+
         DevelopmentFutureAdapter adapter =
                 new DevelopmentFutureAdapter(getActivity(), developmentFutureArrayList);
         developmentFutureRecyclerView.setAdapter(adapter);

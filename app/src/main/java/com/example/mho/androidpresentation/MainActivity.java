@@ -40,6 +40,7 @@ public class MainActivity extends BaseActivity
                         .setAction("Action", null).show();
             }
         });
+        fab.setVisibility(View.GONE);//TODO Implementar
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
