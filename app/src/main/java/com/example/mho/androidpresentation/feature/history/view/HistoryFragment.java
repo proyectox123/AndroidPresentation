@@ -20,8 +20,6 @@ import java.util.ArrayList;
 public class HistoryFragment extends BaseFragment implements HistoryView {
 
     public static final String TAG = "HistoryFragment";
-    private final static int NUMBER_OF_COLUMNS = 2;
-    private final static int SPACING_ITEM = 1;
 
     private RecyclerView historyRecyclerView;
 
@@ -61,10 +59,6 @@ public class HistoryFragment extends BaseFragment implements HistoryView {
         historyRecyclerView = view.findViewById(R.id.historyRecyclerView);
         historyRecyclerView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
-        /*GridSpacingItemDecoration gridSpacingItemDecoration =
-                new GridSpacingItemDecoration(NUMBER_OF_COLUMNS, SPACING_ITEM, false);
-        historyRecyclerView.addItemDecoration(gridSpacingItemDecoration);
-        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), NUMBER_OF_COLUMNS);*/
         historyRecyclerView.setLayoutManager(layoutManager);
 
         historyPresenter.requestHistory();

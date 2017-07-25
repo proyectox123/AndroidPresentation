@@ -1,13 +1,13 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context="com.example.mho.androidpresentation.feature.developmentfuture.DevelopmentFutureFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/developmentFutureRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="https://www.cnet.com/es/noticias/android-2017-futuro-novedades-android-8/"/>
+        android:clipToPadding="false"/>
 
-</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

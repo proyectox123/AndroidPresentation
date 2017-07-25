@@ -46,6 +46,8 @@
     <string name="references_item_screen_supports">https://developer.android.com/guide/practices/screens_support.html</string>
     <string name="references_item_label_platform_architecture">Arquitectura de la plataforma:</string>
     <string name="references_item_platform_architecture">https://developer.android.com/guide/platform/index.html</string>
+    <string name="references_item_label_development_future">Novedades Android 8:</string>
+    <string name="references_item_development_future">https://www.cnet.com/es/noticias/android-2017-futuro-novedades-android-8/</string>
 
     <!-- History -->
     <string name="history_detail_features_label">Características:</string>
@@ -155,7 +157,6 @@
         * SN.
     </string>
 
-
     <!-- Dashboard -->
     <string name="distribution_image_footer">Figura A. Gráfica de distribuciones Android.</string>
     <string name="distribution_version_text">Versión</string>
@@ -196,4 +197,5 @@
 
     <!-- Developer life -->
     <string name="developer_life_section_title">Juntos, pero no iguales.</string>
+
 </resources>
