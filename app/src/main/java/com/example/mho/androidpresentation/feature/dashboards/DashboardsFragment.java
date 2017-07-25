@@ -67,13 +67,13 @@ public class DashboardsFragment extends BaseFragment implements View.OnClickList
 
     private void initList(){
         ArrayList<AndroidVersion> androidVersionArrayList = new ArrayList<>();
-        androidVersionArrayList.add(new AndroidVersion(7, "https://vignette4.wikia.nocookie.net/logopedia/images/d/d8/Andorid-2.3-Gingerbread-logo.png/revision/latest?cb=20130520201209", "Gingerbread", "9–10", "0.7%"));
-        androidVersionArrayList.add(new AndroidVersion(9, "https://lh6.ggpht.com/WUnKUgKwFlUeaI26UGkMR_y39Xs-6oA0RHcJ3_wxwWPwIKGrY4GA2NxjNXj_u_pw-Q=w300", "Ice Cream Sandwich", "14–15", "0.7%"));
-        androidVersionArrayList.add(new AndroidVersion(10, "https://4.bp.blogspot.com/-P0b2RM0Yflo/T-sod7ZWSdI/AAAAAAAAA_s/Lh1QoJEWjkI/s1600/jbean_srgb.png", "Jelly Bean", "16–18", "8.1%"));
-        androidVersionArrayList.add(new AndroidVersion(11, "https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/topic_images/2016/android-kitkat-topic.png", "KitKat", "19–20", "17.1%"));
-        androidVersionArrayList.add(new AndroidVersion(12, "http://img.talkandroid.com/uploads/2014/10/android_lollipop_waving.png", "Lollipop", "21–22", "30.1%"));
-        androidVersionArrayList.add(new AndroidVersion(13, "https://upload.wikimedia.org/wikipedia/tr/3/3c/Android-Marshmallow-logo-.jpg", "Marshmallow", "23", "31.8%"));
-        androidVersionArrayList.add(new AndroidVersion(14, "https://upload.wikimedia.org/wikipedia/commons/c/ca/Android_7.0_Nougat.jpg", "Nougat", "24-25", "11.5%"));
+        androidVersionArrayList.add(new AndroidVersion(7, "Gingerbread", "9–10", "0.7%"));
+        androidVersionArrayList.add(new AndroidVersion(9, "Ice Cream Sandwich", "14–15", "0.7%"));
+        androidVersionArrayList.add(new AndroidVersion(10, "Jelly Bean", "16–18", "8.1%"));
+        androidVersionArrayList.add(new AndroidVersion(11, "KitKat", "19–20", "17.1%"));
+        androidVersionArrayList.add(new AndroidVersion(12, "Lollipop", "21–22", "30.1%"));
+        androidVersionArrayList.add(new AndroidVersion(13, "Marshmallow", "23", "31.8%"));
+        androidVersionArrayList.add(new AndroidVersion(14, "Nougat", "24-25", "11.5%"));
 
         DistributionAdapter adapter = new DistributionAdapter(getActivity(), androidVersionArrayList);
         dashboardsRecyclerView.setAdapter(adapter);

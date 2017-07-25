@@ -47,7 +47,7 @@ public class HistoryFragment extends BaseFragment implements HistoryView {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        historyPresenter = new HistoryPresenterImpl(this);
+        historyPresenter = new HistoryPresenterImpl(getContext(), this);
     }
 
     @Override

@@ -44,7 +44,113 @@
     <string name="references_item_platform_architecture">https://developer.android.com/guide/platform/index.html</string>
 
     <!-- History -->
-    <string name="history_detail_features_label">Implementaciones:</string>
+    <string name="history_detail_features_label">Características:</string>
+    <string name="history_detail_features_1_alpha">
+        * Primer dispositivo Android: HTC Dream.\n\n
+        * Navegador Web para visualizar páginas webs en full HTML y XHTML.\n\n
+        * Sincronización de Gmail, Google Contacts y Google Calendar.\n\n
+        * Reproductor multimedia.\n\n
+        * Google Maps con Latitude y Street View para ver mapas e imágenes por satélite.\n\n
+        * Soporte para Wi-Fi y Bluetooth.\n\n
+    </string>
+    <string name="history_detail_features_2_petit_four">
+        * Detalles y reseñas disponibles cuando un usuario busca negocios en Mapas.\n\n
+        * Posibilidad de guardar archivos adjuntos en los mensajes.\n\n
+    </string>
+    <string name="history_detail_features_3_cupcake">
+        * Soporte para teclados virtuales de terceros con predicción de texto y diccionario de usuarios para palabras personalizadas.\n\n
+        * Soporte para Widgets.\n\n
+        * Grabación y reproducción en formatos MPEG-4 y 3GP.\n\n
+        * Pantallas de transiciones animadas.\n\n
+        * Agregada opción de auto-rotación.\n\n
+    </string>
+    <string name="history_detail_features_4_donut">
+        * Mejora en la búsqueda por entrada de texto y voz para incluir historial de favoritos, contactos y la web.\n\n
+        * Habilidad de los desarrolladores de incluir su contenido en los resultados de búsqueda.\n\n
+        * Motor multi-lenguaje de Síntesis de habla para permitir a cualquier aplicación de Android "hablar" una cadena de texto.\n\n
+        * Búsqueda facilitada y habilidad para ver capturas de las aplicaciones en el Android Market(Google Play).\n\n
+        * Galería, cámara y videocámara con mejor integración, con rápido acceso a la cámara.\n\n
+        * Soporte para resoluciones de pantalla WVGA.
+    </string>
+    <string name="history_detail_features_5_eclair">
+        * Sincronización cuenta expandida, permitiendo a los usuarios agregar múltiples cuentas al dispositivo para sincronización de correo y contactos.\n\n
+        * Soporte Bluetooth 2.1.\n\n
+        * Nuevas características para la cámara, incluyendo soporte de flash, zoom digital, modo escena, balance de blancos, efecto de colores y enfoque macro.\n\n
+        * Optimización en velocidad de hardware y GUI renovada.\n\n
+        * Soporte para más tamaños de pantalla y resoluciones, con mejor ratio de contraste.\n\n
+        * Clase MotionEvent mejorada para rastrear eventos multi-touch.
+    </string>
+    <string name="history_detail_features_6_froyo">
+        * Optimizaciones en velocidad, memoria y rendimiento.\n\n
+        * Integración del motor de JavaScript V8 de Chrome en el navegador.\n\n
+        * Soporte para el servicio Android Cloud to Device Messaging (C2DM), habilitando notificaciones push.\n\n
+        * Soporte para contraseñas numéricas y alfanuméricas.\n\n
+        * Soporte para subida de archivos en la aplicación del navegador.\n\n
+        * Soporte para instalación de aplicaciones en la memoría expandible.\n\n
+        * Soporte para Adobe Flash.
+    </string>
+    <string name="history_detail_features_7_gingerbread">
+        * Actualizado el diseño de la interfaz de usuario con incrementos en velocidad y simpleza.\n\n
+        * Soporte para tamaños y resoluciones de pantalla extra-grandes (WXGA y mayores).\n\n
+        * Soporte nativo para SIP y telefonía por internet VoIP.\n\n
+        * Entrada de texto del teclado virtual más rápida e intuitiva, con mejoras en precisión, texto sugerido y entrada por voz.\n\n
+        * Nuevo gestor de descargas, que da a los usuarios fácil acceso a cualquier archivo descargado del navegador, correo electrónico u otra aplicación.\n\n
+        * Mejoras en audio, gráficos y entrada para desarrolladores de juegos.\n\n
+        * Recolector basura concurrente para incrementar el rendimiento.\n\n
+        * Soporte nativo para más sensores (tales como giroscopio y barómetro).
+    </string>
+    <string name="history_detail_features_8_honeycomb">
+        * Soporte optimizado para tablets, con una nueva y "virtual" interfaz de usuario holográfica.\n\n
+        * Agregada barra de sistema, con características de acceso rápido a notificaciones, estados y botones de navegación suavizados, disponible en la parte inferior de la pantalla.\n\n
+        * Añadida barra de acción (Action Bar en inglés), entregando acceso a opciones contextuales, navegación, widgets u otros tipos de contenido en la parte superior de la pantalla.\n\n
+        * Multitarea simplificada – tocando Aplicaciones recientes en la barra del sistema permite a los usuarios ver instantáneas de las tareas en curso y saltar rápidamente de una aplicación a otra.\n\n
+        * Teclado rediseñado, permitiendo una escritura rápida, eficiente y acertada en pantallas de gran tamaño.\n\n
+        * Acceso rápido a las características de la cámara como la exposición, foco, flash, zoom, cámara facial-frontal, temporizador u otras.\n\n
+        * Habilidad para ver álbumes y otras colecciones de fotos en modo pantalla completa en galería, con un fácil acceso a vistas previas de las fotografías.\n\n
+        * Soporte para videochat usando Google Talk.\n\n
+        * Aceleración de hardware.
+    </string>
+    <string name="history_detail_features_9_ice_cream_sandwich">
+        * Botones software (en pantalla) Android 3.x están ahora disponibles para usar en los teléfonos móviles.\n\n
+        * Separación de widgets en una nueva pestaña, listados de forma similar a las aplicaciones.\n\n
+        * Facilidad para crear carpetas, con estilo de arrastrar y soltar.\n\n
+        * Desbloqueo facial, característica que permite a los usuarios desbloquear los equipos usando software de reconocimiento facial.\n\n
+        * Aceleración por hardware de la interfaz de usuario.
+    </string>
+    <string name="history_detail_features_10_jelly_bean">
+        * Soporte para Bluetooth de baja energía para máximo 4 dispositivos.\n\n
+        * OpenGL ES 3.0.\n\n
+        * Modo de perfiles con acceso restringido.\n\n
+        * Añadido el soporte para más de 5 idiomas.
+    </string>
+    <string name="history_detail_features_11_kitkat">
+        * Implementación Wi-Fi TDLS.\n\n
+        * WebView se pasa a Chromium.\n\n
+        * Framework para transiciones.\n\n
+        * Posibilidad de impresión mediante WiFi.
+    </string>
+    <string name="history_detail_features_12_lollipop">
+        * Material Design.\n\n
+        * Notificaciones.\n\n
+        * Mejora en el rendimiento de la batería.\n\n
+        * Soporte para CPUs de 64 de bits.
+    </string>
+    <string name="history_detail_features_13_marshmallow">
+        * Administrador de permisos.\n\n
+        * Soporte para huellas dactilares.\n\n
+        * Pantalla de bloqueo mejorada.\n\n
+        * Soporte para CPUs de 64 de bits.
+    </string>
+    <string name="history_detail_features_14_nougat">
+        * Optimización de uso de RAM de aplicaciones en segundo plano.\n\n
+        * Incorporación de JAVA 8.\n\n
+        * Posibilidad de ajustar la importancia de las notificaciones.\n\n
+        * Nuevo centro de notificaciones.
+    </string>
+    <string name="history_detail_features_15_o">
+        * SN.
+    </string>
+
 
     <!-- Dashboard -->
     <string name="distribution_image_footer">Figura A. Gráfica de distribuciones Android.</string>

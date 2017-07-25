@@ -1,5 +1,7 @@
 package com.example.mho.androidpresentation.feature.history.presenter;
 
+import android.content.Context;
+
 import com.example.mho.androidpresentation.feature.history.interactor.HistoryInteractor;
 import com.example.mho.androidpresentation.feature.history.interactor.HistoryInteractorImpl;
 import com.example.mho.androidpresentation.feature.history.view.HistoryView;
@@ -12,9 +14,9 @@ public class HistoryPresenterImpl implements HistoryPresenter {
     private HistoryView historyView;
     private HistoryInteractor historyInteractor;
 
-    public HistoryPresenterImpl(HistoryView historyView) {
+    public HistoryPresenterImpl(Context context, HistoryView historyView) {
         this.historyView = historyView;
-        historyInteractor = new HistoryInteractorImpl(this);
+        historyInteractor = new HistoryInteractorImpl(context, this);
     }
 
 
